@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+  
+.code {
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    padding: 10px;
+    background-color: black;
+
+    /* Mobile device */
+    @media (max-width: 768px) {
+        font-size: 11px;
+    }
+    @media (min-width: 768px) {
+        /* flex-direction: row; */
+        /* max-width: 50%; */
+        width: 50vw;
+    }
+}
+
+.sG {
+    color: rgb(31, 172, 31);
+}
+
+.sB {
+    color:rgb(75, 106, 198);
+}
+
+.sY {
+    color: yellow;
+}
