@@ -2,23 +2,25 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    text-align: center;
 }
-  
+
 .code {
     font-family: Menlo, Monaco, 'Courier New', monospace;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: normal;
     color: white;
     padding: 10px;
     background-color: black;
+    text-align: left;
 
     /* Mobile device */
     @media (max-width: 768px) {
         font-size: 11px;
     }
+
     @media (min-width: 768px) {
-        /* flex-direction: row; */
-        /* max-width: 50%; */
         width: 50vw;
     }
 }
@@ -28,9 +30,17 @@ body {
 }
 
 .sB {
-    color:rgb(75, 106, 198);
+    color: rgb(134, 151, 198);
+}
+
+.sP {
+    color: rgb(237, 49, 215);
 }
 
 .sY {
     color: yellow;
+}
+
+.indent {
+    text-indent: 30px;
 }
