@@ -66,6 +66,7 @@ export default function App() {
       <br></br>  
       <br></br>
       <div className='indent'>{output[x]}</div>
+      <br></br>
     </>
   );
 }
