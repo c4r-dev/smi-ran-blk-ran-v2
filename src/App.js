@@ -8,9 +8,9 @@ export default function App() {
   let output = [
     '',
     '0. 1. 1. 0. 1. 1. 0. 0. 1. 1. 0. 0.',
-    '1. 0. 1. 1. 0. 1. 0. 0. 1. 1. 0. 0.',
-    '0. 1. 0. 0. 1. 0. 1. 0. 1. 1. 1. 0.',
-    '0. 1. 1. 0. 1. 1. 0. 1. 0. 1. 0. 0.',
+    '1. 0. 1. 1. 0. 1. 0. 0. 0. 1. 1. 0.',
+    '0. 1. 0. 0. 1. 0. 1. 0. 1. 0. 1. 1.',
+    '1. 1. 1. 0. 0. 1. 0. 1. 0. 1. 0. 0.',
     '1. 0. 1. 0. 1. 1. 0. 0. 1. 0. 0. 1.',
     '0. 1. 0. 0. 1. 1. 1. 1. 0. 0. 1. 0.',
   ]
@@ -27,7 +27,9 @@ export default function App() {
   return (
     <>
 
-      <div className='indent'>Balanced Randomization</div>
+      <div><h1>Balanced Randomization</h1></div>
+      {/* <br></br> */}
+      <div><h2>Feel free to use our code for you next experiment.</h2></div>
       <br></br>
 
       <div className='code'>
