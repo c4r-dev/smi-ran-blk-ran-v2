@@ -1,18 +1,27 @@
+import React, { useState } from 'react';
 import './App.css';
 
 export default function App() {
 
-let x = 0;
+  const [x, setX] = useState(0)
 
-let output =[
-  '0. 1. 1. 0. 1. 1. 0. 0. 1. 1. 0. 0.',
-  '1. 0. 1. 1. 0. 1. 0. 0. 1. 1. 0. 0.',
-  '0. 1. 0. 0. 1. 0. 1. 0. 1. 1. 1. 0.',
-  '0. 1. 1. 0. 1. 1. 0. 1. 0. 1. 0. 0.',
-  '1. 0. 1. 0. 1. 1. 0. 0. 1. 0. 0. 1.',
-  '0. 1. 0. 0. 1. 1. 1. 1. 0. 0. 1. 0.',
-]
+  let output = [
+    '',
+    '0. 1. 1. 0. 1. 1. 0. 0. 1. 1. 0. 0.',
+    '1. 0. 1. 1. 0. 1. 0. 0. 1. 1. 0. 0.',
+    '0. 1. 0. 0. 1. 0. 1. 0. 1. 1. 1. 0.',
+    '0. 1. 1. 0. 1. 1. 0. 1. 0. 1. 0. 0.',
+    '1. 0. 1. 0. 1. 1. 0. 0. 1. 0. 0. 1.',
+    '0. 1. 0. 0. 1. 1. 1. 1. 0. 0. 1. 0.',
+  ]
 
+  const submitRunClick = () => {
+    if (x === 6) {
+      setX(1)
+    } else {
+      setX(x + 1)
+    }
+  }
 
 
   return (
@@ -47,7 +56,14 @@ let output =[
         <br></br>
       </div>
       <br></br>
-      <div className='indent'>{output[0]}</div>
+      <input
+        className="button"
+        type="button"
+        onClick={submitRunClick}
+        value="RUN CODE" />
+      <br></br>  
+      <br></br>
+      <div className='indent'>{output[x]}</div>
     </>
   );
 }
