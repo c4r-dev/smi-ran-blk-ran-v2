@@ -10,7 +10,7 @@ export default function App() {
     '0. 1. 1. 0. 1. 1. 0. 0. 1. 1. 0. 0.',
     '1. 0. 1. 1. 0. 1. 0. 0. 0. 1. 1. 0.',
     '0. 1. 0. 0. 1. 0. 1. 0. 1. 0. 1. 1.',
-    '1. 1. 1. 0. 0. 1. 0. 1. 0. 1. 0. 0.',
+    '1. 1. 0. 1. 0. 1. 0. 1. 0. 1. 0. 0.',
     '1. 0. 1. 0. 1. 1. 0. 0. 1. 0. 0. 1.',
     '0. 1. 0. 0. 1. 1. 1. 1. 0. 0. 1. 0.',
   ]
@@ -29,7 +29,7 @@ export default function App() {
 
       <div><h1>Balanced Randomization</h1></div>
       {/* <br></br> */}
-      <div><h2>Feel free to use our Python code for you next experiment.</h2></div>
+      <div><h2>Feel free to use our Python code for your next experiment.</h2></div>
       <br></br>
 
       <div className='code'>
