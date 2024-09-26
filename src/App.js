@@ -40,6 +40,7 @@ export default function App() {
           border: '1px solid red',
           width: '7vw',
           height: '7vw',
+          marginLeft: index === 0 ? '3px' : '0px', // Add marginLeft to the first item
         }}
       >
       </div>
@@ -91,7 +92,8 @@ export default function App() {
       <div
         style={{
           display: 'grid',
-          gridAutoFlow: 'column'
+          gridAutoFlow: 'column',
+          gap: '1px'
         }}
       >
         {renderGridItems()}
