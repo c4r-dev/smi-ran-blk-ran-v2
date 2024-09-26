@@ -14,8 +14,10 @@ body {
     padding: 15px;
     background-color: black;
     text-align: left;
-    margin: 0 auto; /* Center the code block */
-    width: fit-content; /* Fit the width of the content */
+    margin: 0 auto;
+    /* Center the code block */
+    width: fit-content;
+    /* Fit the width of the content */
 
     /* Mobile device */
     @media (max-width: 768px) {

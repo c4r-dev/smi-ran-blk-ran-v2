@@ -4,9 +4,10 @@ import './App.css';
 export default function App() {
 
   const [x, setX] = useState(0)
-  const [colors, setColors] = useState([]); // Make colors part of the state
 
-  const output = [
+  let colors = []
+
+  let output = [
     [],
     [0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0],
     [1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0],
@@ -18,24 +19,39 @@ export default function App() {
 
   // Function to set output colors
   const submitRunClick = () => {
-    let newColors;
     if (x === 6) {
-      newColors = output[1].map(item => (item === 1 ? 'rgb(235, 235, 152)' : 'black'));
-      setX(1);
+      colors = output[1]
+      colors.forEach((item, index) => {
+        if (item === 1) {
+          colors[index] = 'rgb(235, 235, 152)'
+        } else {
+          colors[index] = 'black'
+        }
+      })
+      setX(1)
     } else {
-      newColors = output[x + 1].map(item => (item === 1 ? 'rgb(235, 235, 152)' : 'black'));
-      setX(x + 1);
+      colors = output[x + 1]
+      colors.forEach((item, index) => {
+        if (item === 1) {
+          colors[index] = 'rgb(235, 235, 152)'
+        } else {
+          colors[index] = 'black'
+        }
+      })
+      setX(x + 1)
     }
-    setColors(newColors); // Update colors state
+    console.log(colors)
   }
 
   // Function to render grid items
   const renderGridItems = () => {
+
     console.log(colors)
     return colors.map((color, index) => (
       <div
         key={index}
-        style={{ backgroundColor: color, border: '1px solid red', width: '30px', height: '30px'}}
+        className="grid-item"
+        style={{ backgroundColor: color }}
       >
       </div>
     ));
@@ -83,7 +99,7 @@ export default function App() {
       <br></br>
       <br></br>
       <div>{output[x]}</div>
-      <div style={{ display: 'grid', gridAutoFlow: 'column' }}>
+      <div className="grid-container">
         {renderGridItems()}
       </div>
       <br></br>
