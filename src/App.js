@@ -35,7 +35,12 @@ export default function App() {
     return colors.map((color, index) => (
       <div
         key={index}
-        style={{ backgroundColor: color, border: '1px solid red', width: '30px', height: '30px'}}
+        style={{
+          backgroundColor: color,
+          border: '1px solid red',
+          width: '7vw',
+          height: '7vw',
+        }}
       >
       </div>
     ));
@@ -82,8 +87,13 @@ export default function App() {
         value="RUN CODE" />
       <br></br>
       <br></br>
-      <div>{output[x]}</div>
-      <div style={{ display: 'grid', gridAutoFlow: 'column' }}>
+      {/* <div>{output[x]}</div> */}
+      <div
+        style={{
+          display: 'grid',
+          gridAutoFlow: 'column'
+        }}
+      >
         {renderGridItems()}
       </div>
       <br></br>
