@@ -89,6 +89,19 @@ export default function App() {
       <br></br>
       <br></br>
       {/* <div>{output[x]}</div> */}
+
+      {/* Legend Section */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <div style={{ width: '20px', height: '20px', border: '1px solid red', backgroundColor: 'black' }}></div>
+          <span>Control</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <div style={{ width: '20px', height: '20px', border: '1px solid red', backgroundColor: 'rgb(235, 235, 152)' }}></div>
+          <span>Treatment</span>
+        </div>
+      </div>
+      <div><br></br></div>
       <div
         style={{
           display: 'grid',
